@@ -13,6 +13,11 @@ Additionally (and tagged separately) there is a branch which has (some) fixes fo
   s.source       = { :git => "https://github.com/thehtb/AppleCoreAudioUtilityClasses.git", :tag => "#{s.version}" }
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.7'
+  s.library = 'c++'
+  s.xcconfig = {
+      'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
+      'CLANG_CXX_LIBRARY' => 'libc++'
+  }
 
   s.subspec 'PublicUtility' do |p|
 
