@@ -39,7 +39,7 @@ Additionally (and tagged separately) there is a branch which has (some) fixes fo
 
     p.subspec 'CADebugPrintf' do |caDebugPrintf|
       caDebugPrintf.source_files = puBase + 'CADebugPrintf.{cpp,h}'
-      caDebugMacros.framework = 'CoreAudio'
+      caDebugPrintf.framework = 'CoreAudio'
     end
 
     p.subspec 'CADebugMacros' do |caDebugMacros|
