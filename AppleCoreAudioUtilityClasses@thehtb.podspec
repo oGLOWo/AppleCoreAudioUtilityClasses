@@ -45,7 +45,7 @@ Additionally (and tagged separately) there is a branch which has (some) fixes fo
     p.subspec 'CAXException' do |caXException|
       caXException.source_files = puBase + 'CAXException.{cpp.h}'
       caXException.framework = 'CoreAudio'
-      caXException.dependency = 'AppleCoreAudioUtilityClasses@thehtb/PublicUtility/CADebugMacros'
+      caXException.dependency 'AppleCoreAudioUtilityClasses@thehtb/PublicUtility/CADebugMacros'
     end
     
   end
