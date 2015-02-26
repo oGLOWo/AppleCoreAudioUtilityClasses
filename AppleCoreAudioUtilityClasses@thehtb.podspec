@@ -37,5 +37,15 @@ Additionally (and tagged separately) there is a branch which has (some) fixes fo
       caSpectralProcessor.dependency 'AppleCoreAudioUtilityClasses@thehtb/PublicUtility/CABitOperations'
     end
 
+    p.subspec 'CADebugMacros' do |caDebugMacros|
+      caDebugMacros.source_files = pubBase + 'CADebugMacros.{cpp,h}'
+      caDebugMacros.framework = 'CoreAudio'
+    end
+
+    pub.subspec 'CAXException' do |caXException|
+      caXException.source_files = pubBase + 'CAXException.{cpp.h}'
+      caXException.framework = 'CoreAudio'
+      caXException.dependency = 'AppleCoreAudioUtilityClasses@thehtb/PublicUtility/CADebugMacros'
+
   end
 end
