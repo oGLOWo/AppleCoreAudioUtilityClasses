@@ -46,6 +46,7 @@ Additionally (and tagged separately) there is a branch which has (some) fixes fo
       caXException.source_files = pubBase + 'CAXException.{cpp.h}'
       caXException.framework = 'CoreAudio'
       caXException.dependency = 'AppleCoreAudioUtilityClasses@thehtb/PublicUtility/CADebugMacros'
-
+    end
+    
   end
 end
